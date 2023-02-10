@@ -72,6 +72,6 @@ app.get("/weather/:page", (req, res) => {
     });
 });
 
-app.listen(3000, () => {
+app.listen(process.env.Port||3000, () => {
   console.log("API running on 3000");
 });
